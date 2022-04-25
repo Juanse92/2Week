@@ -1,35 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 2%;
+    font-family: cursive, Helvetica, sans-serif;
+}
+ 
+p {
+color: blue;
+text-align:center;
+position: relative;
+top: 18px;
+}
+h1 {
+color: rgb(0, 0, 0);
+text-align: center;
 
-/* all h2 elements */
+}  
 h2 {
-    color: black;
-    text-align: right;
-  }
-  
-  
-  /* all with class="highlight" */
-  .highlight {
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
-    background-color: red;
-    opacity: .6;
-  }
-  
-  /* element with id="mainPoint" */
-  #mainPoint {
-    font-size: 24px;
-    font-weight: bold;
-    background-color: red;
-    opacity: .7;
-  }
-  
-  /* all p AND h1 elements */
-  p {
-    color: blue;
-    text-align: center;
-  }
-  
-  h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-  }
+color: rgb(0, 0, 0);
+float:right;
+}
+.box2{
+    margin: 0;
+    background-color: rgb(236, 186, 171);
+    height: 35px;
+    border: 1px solid black;
+    }
+.box3{
+    margin: 0;
+    background-color: rgb(238, 111, 73);
+    height: 35px;
+    border: 1px solid black;
+    }
+.box4{
+    margin: 0;
+    background-color: rgb(136, 33, 2);
+    height: 35px;
+    border: 1px solid black;
+    }
+@media(min-width:992px){
+    .box1{
+        background-color: rgb(171, 197, 236);
+        /* padding: 10px 10px 10px 10px; */
+        border: 1px solid black;
+        margin: 2%;
+        width: 29%;
+        float: left;
+        height: 220px;
+        }   
+}
+@media(min-width:768px) and (max-width:991px){
+    .box1-1{
+        background-color: rgb(171, 197, 236);
+        /* padding: 10px 10px 10px 10px; */
+        border: 1px solid black;
+        margin: 2%;
+        width: 44%;
+        float: left;
+        height: 190px;
+        }
+    .box1-2{
+        background-color: rgb(171, 197, 236);
+        /* padding: 10px 10px 10px 10px; */
+        border: 1px solid black;
+        margin: 2%;
+        width: 92%;
+        float: left;
+        }
+}
+@media(max-width:767px){
+
+    .box1{
+        background-color: rgb(171, 197, 236);
+        border: 1px solid black;
+        margin: 2%;
+        width: 92%;
+        float: left;
+        }
+}
